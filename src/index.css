@@ -1,0 +1,217 @@
+body {
+    background-color: #111;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h2,
+p,
+ul,
+li {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    font-weight: 400
+}
+
+h1 {
+    color: #14A76C;
+    margin-top: 0;
+    font-size: 70px;
+}
+
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.header {
+    background-color: #14A76C;
+    padding: 0;
+}
+
+ul.header li a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+ul.header li a:hover {
+    color: #FFE400;
+}
+
+.content {
+    background-color: #111;
+    padding: 20px;
+}
+
+.content2 {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.content h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+.home .home-content .text-1 {
+    color: #202121;
+    font-size: 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #14A76C;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.home .home-content .text-2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #202121;
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: -3px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #14A76C;
+    letter-spacing: 2.7px;
+}
+
+.home .home-content .text-2 span {
+    color: #202121;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #FFE400;
+}
+
+.home .home-content .text-3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #202121;
+    font-size: 60px;
+    margin: 5px 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #14A76C;
+}
+
+.home .home-content .text-3 span {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #202121;
+    font-size: 60px;
+    font-weight: 500px;
+    margin: 5px 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #FFE400;
+    letter-spacing: 2.7px;
+}
+
+.typing1::before {
+    content: "Web Developer";
+    animation: animate infinite 5s;
+    padding-left: 10px;
+    font-weight: 500px;
+}
+
+@keyframes animate {
+    0% {
+        content: "Student";
+    }
+    50% {
+        content: "Competitive Programmer";
+    }
+    75% {
+        content: "Web Designer";
+    }
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+    color: #fff;
+    font-size: 25px;
+}
+
+.skills .skills-content .left a {
+    text-align: justify;
+    display: inline-block;
+    background: #14A76C;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: #CC00FF;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #14A76C;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #FFE400;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 80%;
+}
+
+.skills-content .right .javascript::before {
+    width: 80%;
+}
+
+.skills-content .right .CP::before {
+    width: 60%;
+}
+
+.skills-content .right .C::before {
+    width: 90%;
+}
